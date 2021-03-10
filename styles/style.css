@@ -1,3 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.rc-coursera-logo{
+    width: 108px;
+    vertical-align: middle;
+    border: 0;
+    height: 16px;
+    padding: 25px;
+    margin-left: 0;       
+}
+
 .DynamicPageHeader{
     height: 65px;
     background-color: #fff;
@@ -7,50 +21,33 @@
     box-sizing: border-box;
     padding: 0 15px;
 }
-.rc-coursera-logo{
-    width: 108px;
-    vertical-align: middle;
-    border: 0;
-    height: 16px;
-    padding: 25px;
-    margin-left: 0;       
+/* Utils */
+.container{
+    max-width: 100%;
+    margin: 0 auto;   
 }
-._1bmi48h {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+
+.banner1box1 {
     display: flex;
-    -webkit-justify-content: center;
     justify-content: center;
-    margin: 0 auto;
-    max-width: 1400px;
-    position: relative;
-    width: 100%;
+    align-items: center;
+    
 }
-._1ufnkzu {
-    margin-left: 96px;
-    margin-right: 32px;
-    max-width: 436px;
+.bannertextbox1 {
+    margin: 0px 180px 0px 100px;
+    width: 496px;
     padding: 40px 0px 55px;
     position: relative;
-    width: 100%;
-    z-index: 3;
 }
-._c4ecak {
-    line-height: 64px;
-    font-size: 64px;
+.titulobanner1 {
+   
+    font-size: 84px;
+    line-height: 92px;
     font-family: Source Sans Pro, Arial, sans-serif;
     letter-spacing: -0.2px;
     font-weight: 600;
 }
-._tocnv8 {
+.textobanner1 {
     line-height: 28px;
     font-size: 20px;
     font-family: "Source Sans Pro", Arial, sans-serif;
@@ -58,30 +55,63 @@
     margin-bottom: 25px;
     margin-top: 24px;
 }
-._ygt2bsh {
-    background: rgb(0, 86, 210);
+.bottonbanner1 {
+    background: #0056D2;
     border: none;
     border-radius: 4px;
     display: inline-block;
     font-family: "Source Sans Pro", Arial, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 24px;
+    line-height: 28px;
     padding: 12px 32px;
     text-align: center;
     transition: background-color 250ms ease-out 0s, box-shadow 250ms ease-out 0s, color 250ms ease-out 0s;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #FFFFFF;
+    width: 238px;
+    height: 72px;
+    letter-spacing: -0.1px;
 }
-._1dru2k9 {
+.banner1box2 {
     height: 497px;
     width: 459px;
     margin-bottom: 32px;
     margin-right: 24px;
     margin-top: 32px;
 }
-._1rrvnfw{
+._bannerimage1{
     max-width: 328px;
     max-height: 354;
     width: 100%;
+}
+.partnersbanner{ 
+    font-family: Source Sans Pro, Arial, sans-serif;
+    text-align: center;
+    background-color:#F5F5F5;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    max-width: 100%;
+    width: 100%;
+}
+.partnersbannertitle{
+    font-family: Source Sans Pro, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.leadinguniversities{
+    color: #0062e4;
+}
+.partnerslogos{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    max-width: 1132px;
+    width: 100%;
+    padding: 0px 10px;
+    padding: 0px 10px;
+    margin: 0px auto;
 }
