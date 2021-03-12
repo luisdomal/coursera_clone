@@ -3,24 +3,62 @@
     padding: 0;
 }
 
-.rc-coursera-logo{
-    width: 108px;
+.coursera_logo{
+    width: 127px;
     vertical-align: middle;
     border: 0;
-    height: 16px;
-    padding: 25px;
+    height: 32px;
     margin-left: 0;       
 }
 
-.DynamicPageHeader{
+.navbar{
     height: 65px;
+    padding: 0px 12px;
     background-color: #fff;
-    z-index: 10;
-    display: block;
+    display: flex;
     font-size: 14px;
-    box-sizing: border-box;
-    padding: 0 15px;
+    align-items: center;
+
 }
+.navbar_1{
+    display: flex;
+    padding: 12px;
+
+}
+.explorebutton{
+    margin: 0% auto;
+    background-color: rgb(0, 86, 210);
+    border: medium none;
+    height: 36px;
+    width: 92px;
+    display: flex;
+    border-radius: 3px;
+    color: white;
+    padding: 0px;
+    font-weight: bold;
+    cursor: default;
+    font-family: sans-serif;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+}
+.explorebuttontext{
+    box-sizing: border-box;
+    padding-left: 4px;
+    font-size: 14px;
+}
+.navbarsearch{
+    border: 1px;
+    padding: 0px 10px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 40px;
+    margin-bottom: 0px;
+}
+
 /* Utils */
 .container{
     max-width: 100%;
