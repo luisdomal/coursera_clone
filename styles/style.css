@@ -2,28 +2,35 @@
     margin: 0;
     padding: 0;
 }
-
-.coursera_logo{
-    width: 127px;
-    vertical-align: middle;
-    border: 0;
-    height: 32px;
-    margin-left: 0;       
-}
-
 .navbar{
     height: 65px;
     padding: 0px 12px;
     background-color: #fff;
-    display: flex;
-    font-size: 14px;
+    display: flex;;
     align-items: center;
-
+    font-size: 14px;
+    line-height: 21px;
+    text-size-adjust: 100%;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    align-items: center;
 }
 .navbar_1{
     display: flex;
-    padding: 12px;
-
+    padding: 0px 12px;
+    height: 40px;
+}
+.coursera_logo{
+    margin-right: 25px;
+    display: flex;
+    width: 127px;
+    vertical-align: middle;
+    border: 0;
+    height: 32px;
+    margin-left: 0; 
 }
 .explorebutton{
     margin: 0% auto;
@@ -57,14 +64,25 @@
     font-size: 14px;
     height: 40px;
     margin-bottom: 0px;
+    width: 100%;
 }
-
+.navbarsearchbox{
+    height: 40px;
+}
+.navbar_2{
+    text-size-adjust: 100%;
+    display: flex;
+    padding: 0px 12px;
+    line-height: 21px;
+    min-height: 1px;
+    font-size: 14px;
+    align-items: center;
+}
 /* Utils */
 .container{
     max-width: 100%;
     margin: 0 auto;   
 }
-
 .banner1box1 {
     display: flex;
     justify-content: center;
@@ -93,7 +111,7 @@
     margin-bottom: 25px;
     margin-top: 24px;
 }
-.bottonbanner1 {
+.bottonbanner1{
     background: #0056D2;
     border: none;
     border-radius: 4px;
@@ -110,6 +128,9 @@
     width: 238px;
     height: 72px;
     letter-spacing: -0.1px;
+}
+.bottonbanner1:hover{
+    background: rgb(0, 65, 158);
 }
 .banner1box2 {
     height: 497px;
@@ -140,8 +161,9 @@
     text-align: center;
     margin-bottom: 50px;
 }
-.leadinguniversities{
-    color: #0062e4;
+.leadinguniversities:hover{
+    color: #0056D2;
+    text-decoration: underline;
 }
 .partnerslogos{
     align-items: center;
