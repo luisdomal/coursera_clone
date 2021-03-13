@@ -19,7 +19,7 @@
     font-size: 14px;
     line-height: 21px;
     text-size-adjust: 100%;
-
+    margin: 0 auto;
 }
 .navbarcoursera{
     align-items: center;
@@ -27,14 +27,13 @@
     height: 64px;
     display: flex;
     padding: 0px 12px;
-    justify-content: center;
     max-width: 100%;
+    justify-content: space-between;
 }
 .navbar1{
     padding: 0px 12px;
     height: 40px;
     display: flex;
-    width: 496.4px;
 }
 .courseralogo{
     margin-right: 25px;
@@ -51,7 +50,7 @@
     color: white;
     border-radius: 3px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     cursor: default;
     align-items: center;
     margin-right: 22px;
@@ -69,17 +68,16 @@
     margin-left: 22px;
 }
 .searchbarcontainer{
-    max-width: 600px;
     text-size-adjust: 100%;
-    height: 40px;
     display: flex;
-
+    margin: 0 auto;
 }
 .searchbar1{
     cursor: text;
     font-size: 14px;
-    font-family: sans-serif;
-    height: 38px;
+    font-family: 'Roboto', sans-serif;
+    height: 40px;
+    width: 400px;
     border: solid;
     border-width: 1px;
     padding: 0px 10px;    
@@ -87,8 +85,8 @@
     border-bottom-left-radius: 2px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    display: flex;
-
+    box-sizing: border-box;
+  
 }
 .searchbutton{
     box-sizing: border-box;
@@ -114,8 +112,42 @@
     padding: 0px 12px;
     height: 44px;
     display: flex;
-    max-width: 100%;
+    align-items: center;
+    position: relative;
+    box-pack: end;
+}
+.navbar2items{
+    display: inline;
+    list-style-type: none;
+}
+.navbar2items li{
     float: left;
+    padding: 12px 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+}
+.login{
+    color: rgb(0, 78, 182);
+}
+.Joinforfreebutton{
+    background-color: rgb(0, 86, 210);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 4px;
+    color: white;
+    padding: 15px;
+    text-decoration-style: solid;
+    width: auto;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;letter-spacing: -0.1pxc;
+}
+.Joinforfreebutton:hover{
+    background-color: rgb(0, 65, 158);
 }
 .banner1box1 {
     display: flex;
@@ -132,14 +164,14 @@
    
     font-size: 84px;
     line-height: 92px;
-    font-family: Source Sans Pro, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: -0.2px;
     font-weight: 600;
 }
 .textobanner1 {
     line-height: 28px;
     font-size: 20px;
-    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: -0.1px;
     margin-bottom: 25px;
     margin-top: 24px;
@@ -149,7 +181,7 @@
     border: none;
     border-radius: 4px;
     display: inline-block;
-    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: bold;
     line-height: 28px;
@@ -178,7 +210,7 @@
     width: 100%;
 }
 .partnersbanner{ 
-    font-family: Source Sans Pro, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     background-color:#F5F5F5;
     padding-top: 64px;
@@ -187,12 +219,15 @@
     width: 100%;
 }
 .partnersbannertitle{
-    font-family: Source Sans Pro, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 600;
     line-height: 36px;
     text-align: center;
     margin-bottom: 50px;
+}
+.leadinguniversities{
+    color: #0056D2;
 }
 .leadinguniversities:hover{
     color: #0056D2;
@@ -223,7 +258,7 @@
 .Goalstitle{
     text-align: center;
     padding-top: 64px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 44px;
     margin-bottom: 65px;
 }
@@ -231,7 +266,7 @@
     margin: 16px 0px;
     font-weight: 600;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     justify-content: center;
     text-align: center;
     text-size-adjust: 100%;
@@ -245,7 +280,7 @@
 .Goalsbanner p{
     margin-bottom: 16px;
     font-size: 20px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 28px;
     text-align: center;
     letter-spacing: -0.1px;
