@@ -61,11 +61,11 @@
     height: 9px;
     margin-left: 6px;
 }
+
 .Explorebutton:hover{
     background-color: white;
     color: rgb(0, 86, 210);
-    border: none;
-    margin-left: 22px;
+    box-shadow: grey 0px 0px 2px;
 }
 .searchbarcontainer{
     text-size-adjust: 100%;
@@ -86,7 +86,6 @@
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     box-sizing: border-box;
-  
 }
 .searchbutton{
     box-sizing: border-box;
@@ -115,6 +114,10 @@
     align-items: center;
     position: relative;
     box-pack: end;
+}
+.navbarmobile{
+    display: flex;
+    justify-content: space-between;
 }
 .navbar2items{
     display: inline;
@@ -149,19 +152,20 @@
 .Joinforfreebutton:hover{
     background-color: rgb(0, 65, 158);
 }
-.banner1box1 {
+.banner1{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
-.bannertextbox1 {
+.banner1box1 {
     margin: 0px 180px 0px 100px;
     width: 496px;
     padding: 40px 0px 55px;
     position: relative;
+    box-sizing: border-box;
 }
 .titulobanner1 {
-   
     font-size: 84px;
     line-height: 92px;
     font-family: 'Roboto', sans-serif;
@@ -198,6 +202,7 @@
     background: rgb(0, 65, 158);
 }
 .banner1box2 {
+    display: flex;
     height: 497px;
     width: 459px;
     margin-bottom: 32px;
@@ -217,6 +222,9 @@
     padding-bottom: 64px;
     max-width: 100%;
     width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
 }
 .partnersbannertitle{
     font-family: 'Roboto', sans-serif;
@@ -234,14 +242,15 @@
     text-decoration: underline;
 }
 .partnerslogos{
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
     align-items: center;
-    justify-content: space-between;
     display: flex;
-    max-width: 1132px;
-    width: 100%;
-    padding: 0px 10px;
-    padding: 0px 10px;
+    justify-content: space-between;
     margin: 0px auto;
+    max-width: 1132px;
+    padding: 0px 10px;
+    width: 100%;
 }
 .Goalsbanner{
     display: grid;
@@ -249,11 +258,9 @@
     padding-bottom: 64px;
     text-align: center;
     align-items: center;
-    max-width: 1400px;
     width: 100%;
     grid-template-columns: repeat(4, 240px);
     justify-content: center;
-
 }
 .Goalstitle{
     text-align: center;
@@ -289,4 +296,63 @@
 }
 .Goalsbanner div{
     margin-right: 50px;
+}
+/* Extra small devices (portrait phones, less than 576px)
+/ No media query for `xs` since this is the default in Bootstrap
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .navbar1{
+        display: none;
+    }
+    .navbar2{
+        display: none;
+    }
+    .partnerslogos{
+        justify-content: space-around;
+    }
+    .partnersbannertitle{
+        font-size: 20px;
+        font-weight: normal;
+        padding: 0px 18px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .banner1box2{
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar1{
+        display: none;
+    }
+    .navbar2{
+        display: none;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar1{
+        display: none;
+    }
+    .navbar2{
+        display: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbarmobile{
+        display: none;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .navbarmobile{
+        display: none;
+    }
 }
