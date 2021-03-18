@@ -231,7 +231,6 @@
     padding-top: 64px;
     padding-bottom: 64px;
     max-width: 100%;
-    width: 100%;
     justify-content: center;
     flex-direction: column;
     display: flex;
@@ -252,8 +251,7 @@
     text-decoration: underline;
 }
 .partnerslogos{
-    -webkit-box-pack: justify;
-    -webkit-box-align: center;
+    box-sizing: border-box;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -261,7 +259,17 @@
     max-width: 1132px;
     padding: 0px 10px;
     width: 100%;
+    line-height: 21px;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
 }
+.partnerslogos a{
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 21px;
+    }
 .Goalsbanner{
     display: grid;
     margin: 0px auto;
@@ -325,20 +333,31 @@
         align-items: center;
     }
     .partnersbanner{
-        display: flex;
+        display: block;
+        box-sizing: border-box;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        max-width: 100%;
+        width: 100%;
+        min-height: 358px;
     }
     .partnerslogos{
-        align-items: center;
-        width: 100%;
-        flex-wrap: wrap;
-        padding-bottom: 15px;
-        margin: 0 auto;
         justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 375px;
+        padding-bottom: 15px;
         line-height: 21px;
-        box-sizing: border-box;
-        text-size-adjust: 100%;
-        text-align: center;
+        max-height: 125px;
         }
+    .partnersbanner a{
+        background-attachment: scroll;
+        touch-action: manipulation;
+        margin: 0px 10px 20px;
+        line-height: 21px;
+    }
+    .partnersbanner img{
+        height: 20px;
+    }
     .partnersbannertitle{
         font-size: 20px;
         font-weight: normal;
@@ -348,12 +367,6 @@
     }
     .banner1box2{
         display: none;
-    }
-    .Goalsbanner{
-        grid-template-columns: 1fr;
-    }
-    .Goalstitle{
-        margin-bottom: 50px;
     }
     .courseralogo{
         padding: 25px;
@@ -414,6 +427,49 @@
     .leadinguniversities{
         color: #0056D2;
         text-decoration: underline;
+    }
+    .Goalstitle{
+        font-size: 28px;
+        font-weight: 600;
+        padding: 64px 20px 0px 20px;
+        margin-bottom: 50px;
+    }
+        .Goalsbanner{
+        grid-template-columns: 1fr;
+    }
+    .Goalsbanner h3{
+        margin: 16px 105px;
+        height: 64px;
+        font-weight: 400;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        justify-content: center;
+        text-align: center;
+        text-size-adjust: 100%;
+        line-height: 32px;
+        letter-spacing: -0.1px;
+        justify-content: center;
+        padding: 0;
+        display: flex;
+    }
+    .Goalsbanner p{
+        margin-top: 0px;
+        font-weight: 400;
+        margin-bottom: 64px;
+        margin-left: 105px;
+        margin-right: 105px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.1px;
+        font-weight: normal;
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    .Goalsbanner div{
+        margin: 0 auto;
     }
 }
 @media (min-width: 768px){
