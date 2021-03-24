@@ -120,6 +120,7 @@
 }
 #navbarbox2 #Joinbutton:hover {
   background: #00419e;
+  letter-spacing: normal;
 }
 
 @media (min-width: 992px) {
